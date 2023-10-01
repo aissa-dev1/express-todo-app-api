@@ -1,10 +1,8 @@
-import express, { Request, Response } from "express";
-import EmojiResponse from "./types/EmojiResponse";
+import { Router } from "express";
+import * as controller from "./controller";
 
-const router = express.Router();
+const router = Router();
 
-router.get("/", (req: Request, res: Response<EmojiResponse>) => {
-  res.status(200).json(["😐", "😉", "😎", "🤣"]);
-});
+router.get("/", controller.getEmojis);
 
 export default router;

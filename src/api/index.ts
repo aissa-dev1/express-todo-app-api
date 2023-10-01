@@ -1,13 +1,14 @@
-import express, { Request, Response } from "express";
-import MessageResponse from "../interfaces/MessageResponse";
+import { Router } from "express";
 import emojisRouter from "./emojis";
+import * as controller from "./controller";
+import { connect } from "../app";
 
-const router = express.Router();
+const router = Router();
+
+connect();
 
 router.use("/emojis", emojisRouter);
 
-router.get("/", (req: Request, res: Response<MessageResponse>) => {
-  res.status(200).json({ message: "API - Aissa Bedr" });
-});
+router.get("/", controller.getApi);
 
 export default router;
