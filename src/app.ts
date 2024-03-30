@@ -1,14 +1,14 @@
-import PORT from "./config/port";
 import mongoose from "mongoose";
-import URI from "./config/uri";
 
 export function listen(): void {
-  console.log(`App start at: http://localhost:${PORT}`);
+  console.log(`App start at: http://localhost:${process.env.PORT || 5555}`);
 }
 
 export async function connect() {
   try {
-    await mongoose.connect(URI);
+    await mongoose.connect(`${process.env.URI}`, {
+      dbName: "task_manager",
+    });
 
     console.log("DB connected");
   } catch (error: any) {
