@@ -4,8 +4,7 @@
   "description": "",
   "main": "./build/main.js",
   "scripts": {
-    "start": "npx tsc -w",
-    "dev": "npx nodemon ./build/main.js"
+    "dev": "node ./build/main.js"
   },
   "keywords": [],
   "author": "",
