@@ -18,7 +18,7 @@ function listen(): void {
 
 async function connect() {
   try {
-    await mongoose.connect(`${process.env.URI}`, {
+    await mongoose.connect(process.env.URI as string, {
       dbName: "task_manager",
     });
 

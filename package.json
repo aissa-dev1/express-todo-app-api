@@ -2,10 +2,10 @@
   "name": "todo-app-api",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/server.js",
+  "main": "./dist/main.js",
   "scripts": {
-    "start": "node ./dist/server.js",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node ./dist/main.js"
   },
   "keywords": [],
   "author": "",
