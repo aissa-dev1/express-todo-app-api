@@ -2,9 +2,9 @@
   "name": "todo-app-api",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/main.js",
+  "main": "./build/index.js",
   "scripts": {
-    "dev": "node ./build/main.js"
+    "start": "node ./build/index.js"
   },
   "keywords": [],
   "author": "",
