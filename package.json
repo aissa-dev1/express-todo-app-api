@@ -2,9 +2,9 @@
   "name": "todo-app-api",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "start": "node ./build/index.js",
+    "start": "node ./dist/index.js",
     "build": "tsc"
   },
   "keywords": [],
